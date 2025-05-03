@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main{
+        width: 150px;
+        height: 450px;
+        
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+    .main img{
+        cursor: pointer;
+    }
+    .hello{
+        width: 50%;
+        height: 50%;
+        
+    }
+    .hello img{
+        width: 100%;
+        height: 550px;
+        
+    }
+    .h1{
+        width: 100px;
+        height: 150px;
+        border: 2px solid green;
+    
+    }
+    .container{
+        width: 100%;
+        display: flex;
+    }
+</style>
+<body>
+  <div class="container">
+       <div class="main">
+        <img onclick="imag(this.src)" src="ab676161000051745ba2d75eb08a2d672f9b69b7 (1).jpeg" alt="">
+        <img onclick="imag(this.src)" src="ab6761610000517490b6c3d093f9b02aad628eaf (1).jpeg" alt="">
+        <img onclick="imag(this.src)" src="ab67616100005174b19af0ea736c6228d6eb539c (1).jpeg" alt="">
+        <img onclick="imag(this.src)" src="ab67616100005174bd6fbc7d0973cc33940781ad (1).jpeg" alt="">
+        <img onclick="imag(this.src)" src="ab67616100005174cb6926f44f620555ba444fca (1).jpeg" alt="">
+       </div>
+       <div class="hello">        
+        <img src="ab67616100005174bd6fbc7d0973cc33940781ad (1).jpeg" alt="">
+       </div>
+    </div>
+  
+  
+    <script>
+       var imgchange =document.querySelector(".hello img")
+
+        function imag(value){
+            imgchange.src = value
+            
+        }
+
+    </script> 
+ 
+
+
+</body>
+</html>
